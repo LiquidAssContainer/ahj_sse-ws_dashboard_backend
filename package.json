@@ -1,0 +1,35 @@
+{
+  "name": "online-reportage_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "forever server.js",
+    "watch": "forever -w server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiquidAssContainer/ahj_sse-ws_reportage_backend.git"
+  },
+  "author": "LiquidAssContainer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiquidAssContainer/ahj_sse-ws_reportage_backend/issues"
+  },
+  "homepage": "https://github.com/LiquidAssContainer/ahj_sse-ws_reportage_backend#readme",
+  "dependencies": {
+    "@koa/router": "^10.0.0",
+    "forever": "^3.0.4",
+    "http-event-stream": "^0.2.0",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-cors": "0.0.16",
+    "koa-static": "^5.0.0",
+    "live-server": "^1.2.1",
+    "uuid": "^8.3.2"
+  },
+  "engines": {
+    "node": "11.x"
+  }
+}

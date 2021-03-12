@@ -16,7 +16,7 @@ module.exports = class InstanceActions {
 
       const event = this.newEvent('created', { info: 'Created', server: id, date: new Date(), status: 'stopped' });
       this.sendEvent(event, user);
-    }, 2000);
+    }, 5000);
   }
 
   remove(id, user) {
@@ -33,7 +33,7 @@ module.exports = class InstanceActions {
 
       const event = this.newEvent('removed', { info: 'Removed', server: id, date: new Date() });
       this.sendEvent(event, user);
-    }, 2000);
+    }, 5000);
   }
 
   run(id, user) {
@@ -48,7 +48,7 @@ module.exports = class InstanceActions {
       instance.state = 'running';
       const event = this.newEvent('started', { info: 'Started', server: id, date: new Date() });
       this.sendEvent(event, user);
-    }, 4000);
+    }, 5000);
   }
 
   stop(id, user) {
@@ -63,7 +63,7 @@ module.exports = class InstanceActions {
       instance.state = 'stopped';
       const event = this.newEvent('stopped', { info: 'Stopped', server: id, date: new Date() });
       this.sendEvent(event, user);
-    }, 4000);
+    }, 5000);
   }
 
   isInstanceChanging(instance) {
